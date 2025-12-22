@@ -1,8 +1,4 @@
-/* ==========================================================
-    [ FUNCIÓN 1: CAMBIO DE PESTAÑAS PRINCIPALES ]
-    Hace que al dar clic a "Sobre mí" se oculte "Proyectos" y viceversa
-========================================================== 
-*/
+/*FUNCIÓN 1: CAMBIO DE PESTAÑAS PRINCIPALES*/
 const controlNavegacion = () => {
     const botones = document.querySelectorAll(".tabs button");
     const secciones = document.querySelectorAll(".contenido");
@@ -16,11 +12,7 @@ const controlNavegacion = () => {
     });
 };
 
-/* ==========================================================
-    [FUNCIÓN 2: SELECTOR DE PROYECTOS ]
-    Controla la lista de proyectos dentro de la caja de Proyectos
-========================================================== 
-*/
+/*FUNCIÓN 2: SELECTOR DE PROYECTOS*/
 const controlProyectos = () => {
     const items = document.querySelectorAll(".panel-lista .item");
     const detalles = document.querySelectorAll(".detalle");
@@ -36,10 +28,7 @@ const controlProyectos = () => {
     });
 };
 
-/* ==========================================================
-    [ INICIO: LANZAR TODO AL CARGAR ]
-========================================================== 
-*/
+/* INICIO: LANZAR TODO AL CARGAR*/
 document.addEventListener("DOMContentLoaded", () => {
     controlNavegacion();
     controlProyectos();
