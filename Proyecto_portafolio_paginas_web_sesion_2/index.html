@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sergio Tellez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./IMAGENES/FIRMA ST.jpg">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-card">
+            <h1 class="nombre">SERGIO A. TELLEZ TELLEZ</h1>
+            <div class="logo-box">
+                <img src="./IMAGENES/LOGOEMPRESARIAL.png" alt="Logo">
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs">
+        <button data-seccion="sobre">Sobre mí</button>
+        <button data-seccion="formacion">Formación</button>
+        <button data-seccion="proyectos">Proyectos Personales</button>
+        <button data-seccion="proyectos-prometeo">Proyectos Proyectos Prometeo</button>
+    </nav>
+
+    <main>
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="sobre" class="contenido activo card">
+            <img src="./IMAGENES/Sergio Tellez.png" class="profile-img" alt="Sergio Tellez">
+            <h2>Sobre mí</h2>
+            <p>
+                Analista de datos especializado en reporting y dashboards. 
+                Más de 10 años de experiencia en entornos financieros y operativos, 
+                trabajando con Excel avanzado, Power BI y SQL para transformar datos 
+                en decisiones.
+            </p>
+        </section>
+        <!-- SECCIÓN FORMACIÓN Y CERTIFICACIONES -->
+        <section id="formacion" class="contenido card">
+            <h2>Formación</h2>
+            <ul>
+                <li>Administración de Sistemas Informáticos en Red (ASIR) - 2025</li>
+                <li>Operaciones Auxiliares de Montaje y Mantenimiento de Sistemas Microinformáticos (Unicas Centro de Formación) - 2025</li>  
+                <li>Análisis de Datos y Big Data (Colsubsidio) - 2021</li>                
+            </ul>
+
+            <h2>Certificaciones</h2>
+            <ul>
+                <li>Descripción del análisis de datos - Microsoft - 28/julio/2025</li>
+                <li>Introducción a la compilación con Power BI - Microsoft - 01/agosto/2025</li>
+                <li>Obtener datos con Power BI Desktop - Microsoft - 08/agosto/2025</li>
+                <li>Introducción al análisis de un extremo a otro con Microsoft Fabric - 08/agosto/2025</li>
+                <li>Comienza con Lakehouses en Microsoft Fabric - 08/agosto/2025</li> 
+                <li>Crear informes interactivos con Copilot para Power BI - Microsoft - 11/agosto/2025</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS PERSONALES -->
+        <section id="proyectos" class="contenido card">
+            <h2>Proyectos</h2>
+            <!-- PANEL DE PROYECTOS PERSONALES-->
+            <div class="proyectos-panel">
+                <div class="panel-lista">
+                    <button class="item activo" data-proyecto="data">Dashboard de Análisis de Datos</button>
+                    <button class="item" data-proyecto="web">Portfolio Web Personal</button>
+                    <button class="item" data-proyecto="soporte">Soporte Técnico y Redes</button>
+                </div>
+                <!-- DETALLE DE PROYECTOS PERSONALES-->
+                <div class="panel-detalle">
+
+                    <div id="data" class="detalle activo">
+                        <h3>Dashboard de Análisis de Datos</h3>
+                        <p>
+                            Visualización de KPIs y análisis operativo mediante 
+                            dashboards interactivos desarrollados con Excel y Power BI.
+                        </p>
+                        <ul>
+                            <li>Productividad y eficiencia</li>
+                            <li>Análisis por periodos y perfiles</li>
+                            <li>Enfoque en toma de decisiones</li>
+                        </ul>
+
+                        <div class="subproyectos">
+                            <a href="./PROYECTOS/Data Analysis/Proyecto de VTC.pdf" target="_blank">📊 Dashboard Gestión VTC</a>
+                            <a href="./PROYECTOS/Data Analysis/Pasos para liderar la gestión y el seguimiento de un Call-center.pdf" target="_blank">📞 Gestión de Contact Center</a>
+                        </div>
+                    </div>
+
+                    <div id="web" class="detalle">
+                        <h3>Portfolio Web Personal</h3>
+                        <p>HTML, CSS y JavaScript responsive.</p>
+                    </div>
+
+                    <div id="soporte" class="detalle">
+                        <h3>Soporte Técnico y Redes</h3>
+                        <p>Configuración básica de sistemas y redes.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS PROMETEO -->
+        <section id="proyectos-prometeo" class="contenido card">
+            <h2>Proyectos Prometeo</h2>
+
+            <div class="proyectos-panel">
+
+            <!--LISTA DE MATERIAS PROMETEO-->
+                <div class="panel-lista">
+                    <button class="item activo" data-proyecto="lenguajes">Lenguajes de marcas y sistemas de gestión de información.></button>
+                    <button class="item" data-proyecto="implantacion">Implantación de sistemas operativos.</button>
+                    <button class="item" data-proyecto="itinerario">Itinerario personal para la empleabilidad 1.</button>
+                    <button class="item" data-proyecto="planificacion">Planificación y administración de redes.</button>
+                    <button class="item" data-proyecto="modulo">Módulo profesional optativo.</button>
+                    <button class="item" data-proyecto="basesdedatos">Gestión de bases de datos.</button>
+                                        <button class="item" data-proyecto="hardware">Fundamentos de hardware.</button>
+                </div>
+
+        <!-- DETALLE DE PROYECTOS PROMETEO-->
+            <div class="panel-detalle">
+
+            <!--PROYECTO LENGUAJE DE MARCAS-->
+            <div id="lenguajes" class="detalle activo">
+                <h3>Lenguajes de marcas y sistemas de gestión de información.</h3>
+                <p>
+                    Proyecto realizado para la asignatura de Lenguajes de marcas y sistemas de gestión de información.
+                    Consiste en la creación de una página web utilizando HTML y CSS para mostrar un portafolio personal.
+                </p>
+                <ul>
+                    <li>Uso de HTML para estructurar el contenido.</li>
+                    <li>Aplicación de CSS para el diseño y estilo visual.</li>
+                    <li>Implementación de un diseño responsive para adaptarse a diferentes dispositivos.</li>
+                </ul>
+            </div>
+
+            <!--PROYECTO IMPLANTACIÓN DE SISTEMAS OPERATIVOS-->
+            <div id="implantacion" class="detalle">
+                <h3>Implantación de sistemas operativos.</h3>
+                <p>Proyecto realizado para la asignatura Implantación de Sistemas Operativos, basado en el diseño e implementación de la infraestructura informática de un contact center.
+
+                El proyecto consiste en la creación de un entorno empresarial virtualizado con sistemas Windows y Linux, orientado a la administración, seguridad y mantenimiento de los sistemas.</p>
+                <ul>
+                    <li>Instalación y configuración de sistemas operativos en máquinas virtuales.</li>
+                    <li>Administración remota mediante RDP y SSH.</li>
+                    <li>Gestión de usuarios y permisos.</li>
+                    <li>Aplicación de medidas básicas de seguridad y firewall.</li>
+                    <li>Documentación del entorno y simulación de un escenario empresarial real.</li>
+                </ul>
+            </div>
+
+                <!--PROYECTO ITINERARIO PERSONAL PARA LA EMPLEABILIDAD 1-->
+            <div id="itinerario" class="detalle">
+                <h3>Itinerario personal para la empleabilidad 1.</h3>
+                <p>Proyecto realizado para la asignatura Itinerario Personal para la Empleabilidad 1, enfocado en el desarrollo de habilidades y estrategias para mejorar la empleabilidad en el sector de tecnologías de la información.
+
+                El proyecto incluye la creación de un currículum vitae, una carta de presentación y la planificación de una estrategia de búsqueda de empleo.</p>
+                <ul>
+                    <li>Elaboración de un currículum vitae profesional.</li>
+                    <li>Redacción de una carta de presentación personalizada.</li>
+                    <li>Desarrollo de una estrategia de búsqueda de empleo efectiva.</li>
+                    <li>Identificación de oportunidades laborales en el sector tecnológico.</li>
+                </ul>
+            </div>
+            <!--PROYECTO PLANIFICACIÓN Y ADMINISTRACIÓN DE REDES-->
+            <div id="planificacion" class="detalle">
+                <h3>Planificación y administración de redes.</h3>
+                <p>Proyecto realizado para la asignatura Planificación y Administración de Redes.
+                El trabajo consistió en el diseño, configuración y verificación de una red pequeña y funcional, utilizando direccionamiento IPv4 y el simulador Cisco Packet Tracer.
+
+                Durante el desarrollo del proyecto se realizaron las siguientes tareas:</p>
+                <ul>
+                    <li>Diseño de un plan de direccionamiento IPv4, partiendo de la red 192.168.1.0 y aplicando subnetting para crear 8 subredes.</li>
+                    <li>Configuración de una topología de red con router, switches y PCs, asignando direcciones IP estáticas a cada dispositivo.</li>
+                    <li>Activación y configuración de las interfaces del router para permitir la comunicación entre subredes.</li>
+                    <li>Verificación del funcionamiento de la red mediante pruebas de conectividad (ping) entre hosts y hacia las puertas de enlace.</li>
+                    <li>Documentación del proceso, incluyendo tablas de direccionamiento, diagramas y evidencias de las pruebas realizadas.</li>
+                </ul>
+                <p>Este proyecto permitió aplicar de forma práctica los conceptos básicos de redes, comprender el uso del subnetting y validar la correcta comunicación entre diferentes segmentos de red.</p>
+            </div>
+
+            <!--PROYECTO MÓDULO PROFESIONAL OPTATIVO-->
+            <div id="modulo" class="detalle">
+                <h3>Módulo profesional optativo.</h3>
+                <p>Proyecto realizado para el módulo profesional optativo, enfocado en la creación de una aplicación web utilizando tecnologías como HTML, CSS y JavaScript.
+
+                El proyecto incluye el desarrollo de una interfaz de usuario interactiva y la implementación de funcionalidades básicas.</p>
+                <ul>
+                    <li>Desarrollo de una aplicación web básica.</li>
+                    <li>Implementación de una interfaz de usuario interactiva.</li>
+                    <li>Uso de HTML, CSS y JavaScript para el desarrollo web.</li>
+                </ul>
+            </div>
+            <!--PROYECTO GESTIÓN DE BASES DE DATOS-->
+            <div id="basesdedatos" class="detalle">  
+                <h3>Gestión de bases de datos.</h3>
+                <p>Proyecto realizado para la asignatura de Gestión de Bases de Datos. Consiste en el diseño de una base de datos para gestionar un festival de música, permitiendo organizar las ediciones del festival, los escenarios, los conciertos, los artistas, los clientes y la venta de entradas.
+
+                El proyecto se ha desarrollado mediante el diseño del modelo Entidad–Relación y su transformación al modelo relacional, con el objetivo de estructurar la información de forma clara y evitar duplicidades.</p>
+                <ul>
+                    <li>Identificación de las entidades principales del sistema.</li>
+                    <li>Definición de relaciones entre tablas y sus cardinalidades.</li>
+                    <li>Uso de claves primarias y foráneas para garantizar la integridad de los datos.</li>
+                    <li>Resolución de relaciones muchos a muchos mediante tablas intermedias.</li>
+                    <li>Control de ventas de entradas y accesos a conciertos.</li>
+                </ul>
+
+                <!--ENLACE AL PROYECTO -->
+                <div class="link-proyecto">
+                    <a href="./PROMETEO/bases-datos.html" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                </div>
+            </div>
+            <!--PROYECTO FUNDAMENTOS DE HARDWARE-->
+            <div id="hardware" class="detalle">  
+                <h3>Fundamentos de hardware.</h3>
+                <p>Proyecto realizado para la asignatura Fundamentos de Hardware, centrado en el análisis práctico de los componentes de un sistema informático mediante el uso de máquinas virtuales.
+
+                El trabajo aborda la identificación del hardware, pruebas de rendimiento, verificación del estado del almacenamiento y gestión de discos, utilizando herramientas reales como CPU-Z, CrystalDiskMark, GParted y entornos virtualizados para simular escenarios profesionales.
+
+                Principales aprendizajes:</p>
+                <ul>
+                    <li>Análisis y verificación de componentes hardware.</li>
+                    <li>Evaluación del rendimiento del sistema.</li>
+                    <li>Gestión básica de discos y particiones.</li>
+                    <li>Uso de máquinas virtuales como entorno seguro de pruebas.</li>
+                    <li>Comprensión de procesos habituales en soporte técnico y administración de sistemas.</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section class="card contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li><strong>Móvil:</strong> +34 634 104 283</li>
+                <li><strong>Email:</strong> sergi.temezk@gmail.com</li>
+                <li><strong>LinkedIn:</strong><a href="https:www.linkedin.com/in/sergio-tellez-tellez-9613a6367" target="_blank" rel="noopener noreferrer">Ver perfil</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <!--FONDO DE PANTALLA-->
+    <div class="data">
+        <div class="overlay"></div>
+        <img src="./IMAGENES/data analisys.png" alt="Data Analysis Background">
+    </div>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <p>© 2025 · Proyecto educativo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

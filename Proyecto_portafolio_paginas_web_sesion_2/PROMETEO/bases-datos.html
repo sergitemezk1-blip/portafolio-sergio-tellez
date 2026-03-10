@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion de Bases de Datos</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-card">
+        <h1 class="nombre">SERGIO A. TELLEZ TELLEZ</h1>
+        <div class="logo-box">
+            <img src="../IMAGENES/LOGOEMPRESARIAL.png" alt="Logo">
+        </div>
+    </div>
+</header>
+
+<main>
+
+<!-- TITULO PROYECTO -->
+    <section class="card galeria">
+        <h2>Gestión de Bases de Datos</h2>
+    </section>
+
+    <!-- PANEL DE BOTONES -->
+    <section class="card galeria">
+
+    <div class="panel-proyecto">
+
+        <button class="btn-proyecto-1 activo" data-contenido="intro">
+        Introducción
+        </button>
+
+        <button class="btn-proyecto-1" data-contenido="objetivo">
+        Objetivo
+        </button>
+
+        <button class="btn-proyecto-1" data-contenido="identificacion">
+        Identificación de tablas
+        </button>
+
+        <button class="btn-proyecto-1" data-contenido="compacta">
+        Modelo compacto
+        </button>
+
+        <button class="btn-proyecto-1" data-contenido="conclusion">
+        Conclusión
+        </button>
+
+    </div>
+    </section>
+
+    <!-- PANEL CONTENIDO -->
+    <section class="card panel-detalle">
+
+    <div id="intro" class="detalle activo">
+
+        <p>
+        El proyecto RockFest consiste en el diseño de una base de datos para gestionar la información de un festival de música.
+        El sistema permite organizar ediciones del festival, escenarios, conciertos, artistas, clientes y venta de entradas,
+        además de controlar el acceso del público a los conciertos.
+        </p>
+
+    </div>
+
+
+    <div id="objetivo" class="detalle">
+
+        <p>El objetivo del proyecto es diseñar una base de datos relacional que permita gestionar eficientemente la información del
+        festival RockFest, evitando redundancias y garantizando la integridad de los datos.
+        </p>
+
+    </div>
+
+    <div id="identificacion" class="detalle">
+
+        <h3>Identificacion de tablas y relaciones simples</h3>
+
+        <p>En el proyecto se presentan dos vistas del modelo de datos: una versión simple y una versión compacta. La versión simple permite identificar de forma clara las tablas principales y sus relaciones, facilitando la comprensión general del sistema.
+        </p>
+
+        <h3>Tablas Base</h3>
+
+        <p>EDICION_FESTIVAL: COD_EDICION, FECHA_INICIO, FECHA_FIN, CIUDAD, RECINTO_PRINCIPAL. ESCENARIO: ID_ESCENARIO, NOMBRE, CAPACIDAD_MAXIMA, COD_EDICION. ARTISTA: ID_ARTISTA, NOMBRE_ARTISTICO, PAIS_ORIGEN, GENERO_MUSICAL.</p>
+
+        <h3>Gestión de Conciertos (Relaciones Complejas)</h3>
+
+        <p>CONCIERTO: ID_CONCIERTO, FECHA, HORA_INICIO, HORA_FIN, ID_ESCENARIO, ID_ARTISTA_PRINCIPAL, COD_EDICION. ARTISTA_INVITADO: (ID_CONCIERTO, ID_ARTISTA), TIPO_PARTICIPACION.</p>
+
+        <h3>Ventas y Clientes</h3>
+
+        <p>CLIENTE: ID_CLIENTE, DNI, NOMBRES, APELLIDOS, EMAIL, TELEFONO. TIPO_ENTRADA: ID_TIPO_ENTRADA, NOMBRE, PRECIO, AFORO_MAX, COD_EDICION.VENTA: ID_VENTA, ID_CLIENTE, ID_TIPO_ENTRADA, FECHA_HORA, CANTIDAD, FORMA_PAGO.</p>
+
+        <h3>Control y Servicios</h3>
+        
+        <p>ACCESO_CONCIERTO: (ID_CLIENTE, ID_CONCIERTO), HORA_ACCESO. PUESTO: ID_PUESTO, NOMBRE, TIPO_PRODUCTO, COD_EDICION, ID_ESCENARIO_CERCANO.</p>
+
+    </div>
+
+    <div id="compacta" class="detalle">
+
+        
+        <h3>Identificacion de tablas y relaciones Compactas</h3>
+
+        <p>
+            La versión compacta muestra el modelo completamente desarrollado, con todas las claves primarias, claves foráneas y atributos, permitiendo validar el diseño y servir como base para su implementación en un sistema gestor de bases de datos.
+        </p>
+
+        <img 
+        src="../IMAGENES PROYECTO GESTION DE BASES DE DATOS/TABLAS COMPACTAS.jpg">
+    </div>
+
+
+        <div id="conclusion" class="detalle">
+
+        
+        <h3>Conclusiòn</h3>
+
+        <p>
+            Este diseño no solo cumple con la integridad referencial necesaria para evitar duplicidad de datos, sino que está pensado para la escalabilidad. Al separar los Tipos de Entrada por Edición y permitir un registro detallado de Artistas Invitados, la organización RockFest puede obtener analíticas reales sobre qué artistas atraen más público y cómo optimizar el aforo de sus escenarios en futuras ediciones.
+
+        </p>
+    </div>
+
+</section>
+
+    <!-- IMAGENES DEL PROYECTO -->
+    <section class="card slider-card">
+
+    <h2>Diagramas del Proyecto</h2>
+
+    <div class="slider-proyecto">
+
+    <!--DIAGRAMA 1 -->
+    <div class="slide activo">
+    <div class="slide-contenido">
+    <div class="slide-texto">
+        <h3>Modelo entidad-relacion inicial</h3>
+
+        <p>Esta imagen representa el 'mapa de carreteras' de RockFest. Aquí vemos cómo los tres pilares del evento se unen: la Logística (escenarios y fechas), el Talento (artistas y conciertos) y el Público (clientes y entradas). Lo que buscamos aquí es que ninguna pieza de información esté aislada; si un cliente compra una entrada, el sistema sabe automáticamente a qué escenario debe ir y qué artista estará tocando en ese momento.</p>
+    
+    </div>
+
+    <div class="slide-imagen">
+        <img src="../IMAGENES PROYECTO GESTION DE BASES DE DATOS/DIAGRAMA 1.1.png">
+    </div>
+    </div>
+    </div>
+
+<!--DIAGRAMA 2 -->
+    <div class="slide">
+    <div class="slide-contenido">
+    <div class="slide-texto">
+        <h3>Modelo entidad-relacion completo</h3>
+
+        <p>Aquí bajamos a la 'sala de máquinas'. En este esquema definimos las reglas del juego: qué datos son obligatorios y cómo se relacionan entre sí. Por ejemplo, un concierto no puede existir sin un escenario asignado, y una entrada no es válida si no está vinculada a una edición específica del festival. Es la garantía de que el sistema sea a prueba de errores humanos.</p>
+    </div>
+
+    <div class="slide-imagen">
+        <img src="../IMAGENES PROYECTO GESTION DE BASES DE DATOS/DIAGRAMA 2.2.png">
+    </div>
+    </div>
+    </div>
+
+<!--DIAGRAMA 3 -->
+    <div class="slide">
+    <div class="slide-contenido">
+    <div class="slide-texto">
+        <h3>Tipo de relaciones</h3>
+        <p>
+        <li> Relación: Uno (1)
+        Definición: Representa el origen único de una información. Es la entidad "madre".
+
+        Funcionalidad: Centraliza datos para evitar repeticiones. Si algo cambia en el "Uno", se actualiza en todo el sistema.
+
+        Ejemplo de uso: Una Edición (ej. 2024). De ella nacen todos los escenarios y conciertos de ese año. Es el punto de partida.</li>
+
+        <li>Relación: Muchos (N)
+        Definición: Indica que un dato puede repetirse o multiplicarse varias veces.
+
+        Funcionalidad: Permite el crecimiento del festival. Es lo que da volumen y detalle a la base de datos.
+
+        Ejemplo de uso: Los Escenarios. Una sola edición tiene muchos escenarios funcionando al mismo tiempo.</li>
+
+        <li>Relación: Uno y solo Uno (1..1)
+        Definición: Una conexión exclusiva, obligatoria y estricta entre dos elementos.
+
+        Funcionalidad: Actúa como un candado de seguridad. No permite que existan datos sueltos o sin dueño.
+
+        Ejemplo de uso: Un Ticket de entrada. Solo puede pertenecer a un solo cliente; no puede haber tickets sin dueño ni compartidos.</li>
+
+        <li>Relación: Cero a Muchos (0..N)
+        Definición: Indica que la conexión es opcional. Puede no haber nada o haber mucho.
+
+        Funcionalidad: Aporta flexibilidad. Permite registrar datos ahora y completar la información después.
+
+        Ejemplo de uso: Un Artista. Puedes registrarlo en el sistema aunque todavía tenga cero conciertos asignados.</li>
+
+        <li>Relación: Uno o Muchos (1..N)
+        Definición: Indica que, para que el registro exista, debe haber al menos uno, pero no hay límite máximo.
+
+        Funcionalidad: Obliga a que haya actividad. Evita que existan elementos vacíos que no sirven para nada en el negocio.
+
+        Ejemplo de uso: Un Escenario. No tiene sentido registrar un escenario en el sistema si no va a tener, por lo menos, un concierto programado. Puede tener muchos, pero el primero es obligatorio.</li>
+
+        <li>Relación: Cero o Uno (0..1)
+        Definición: Indica que algo es totalmente opcional y, si existe, es único.
+
+        Funcionalidad: Sirve para añadir información "extra" que no todos los registros tienen, manteniendo la base de datos limpia.
+
+        Ejemplo de uso: Un Artista Invitado. Un concierto puede tener cero invitados (solo toca la banda principal) o máximo uno para una colaboración special.
+        </li>
+        </p>
+    </div>
+
+    <div class="slide-imagen">
+        <img src="../IMAGENES PROYECTO GESTION DE BASES DE DATOS/TIPO DE LINEAS.png">
+    </div>
+    </div>
+    </div>
+
+    <div class="slider-botones">
+        <button id="prev" class="btn-proyecto-1">Anterior</button>
+        <button id="next" class="btn-proyecto-1">Siguiente</button>
+    </div>
+    </div>
+
+    <!--VISOR DE IMAGEN-->
+    <div class="visor-imagen">
+        <span class="cerrar">x</span>
+        <img class="imagen-grande">
+    </div>
+
+    </section>
+
+    </main>
+
+    <!-- FONDO -->
+    <div class="data">
+        <div class="overlay"></div>
+        <img src="../IMAGENES/data analisys.png" alt="fondo visual">
+    </div>
+
+    <footer>
+    <p>© 2025 · Proyecto Prometeo</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+    </body>
+    </html>
