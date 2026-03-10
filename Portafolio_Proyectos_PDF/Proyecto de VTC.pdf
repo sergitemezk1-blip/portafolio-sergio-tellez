@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sergio Tellez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./IMAGENES/FIRMA ST.jpg">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-card">
+            <h1 class="nombre">SERGIO A. TELLEZ</h1>
+            <div class="logo-box">
+                <img src="./IMAGENES/LOGOEMPRESARIAL.png" alt="Logo">
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs">
+        <button data-seccion="sobre">Sobre mí</button>
+        <button data-seccion="formacion">Formación</button>
+        <button data-seccion="proyectos">Proyectos</button>
+    </nav>
+
+    <main>
+
+        <section id="sobre" class="contenido activo card">
+            <img src="./IMAGENES/Sergio Tellez.png" class="profile-img" alt="Sergio Tellez">
+            <h2>Sobre mí</h2>
+            <p>
+                Analista de datos especializado en reporting y dashboards. 
+                Más de 10 años de experiencia en entornos financieros y operativos, 
+                trabajando con Excel avanzado, Power BI y SQL para transformar datos 
+                en decisiones.
+            </p>
+        </section>
+
+        <section id="formacion" class="contenido card">
+            <h2>Formación</h2>
+            <ul>
+                <li>Administración de Sistemas Informáticos en Red (ASIR) - 2025</li>
+                <li>Operaciones Auxiliares de Montaje y Mantenimiento de Sistemas Microinformáticos (Unicas Centro de Formación) - 2025</li>  
+                <li>Análisis de Datos y Big Data (Colsubsidio) - 2021</li>                
+            </ul>
+
+            <h2>Certificaciones</h2>
+            <ul>
+                <li>Descripción del análisis de datos - Microsoft - 28/julio/2025</li>
+                <li>Introducción a la compilación con Power BI - Microsoft - 01/agosto/2025</li>
+                <li>Obtener datos con Power BI Desktop - Microsoft - 08/agosto/2025</li>
+                <li>Introducción al análisis de un extremo a otro con Microsoft Fabric - 08/agosto/2025</li>
+                <li>Comienza con Lakehouses en Microsoft Fabric - 08/agosto/2025</li> 
+                <li>Crear informes interactivos con Copilot para Power BI - Microsoft - 11/agosto/2025</li>
+            </ul>
+        </section>
+
+        <section id="proyectos" class="contenido card">
+            <h2>Proyectos</h2>
+
+            <div class="proyectos-panel">
+
+                <div class="panel-lista">
+                    <button class="item activo" data-proyecto="data">Dashboard de Análisis de Datos</button>
+                    <button class="item" data-proyecto="web">Portfolio Web Personal</button>
+                    <button class="item" data-proyecto="soporte">Soporte Técnico y Redes</button>
+                </div>
+
+                <div class="panel-detalle">
+
+                    <div id="data" class="detalle activo">
+                        <h3>Dashboard de Análisis de Datos</h3>
+                        <p>
+                            Visualización de KPIs y análisis operativo mediante 
+                            dashboards interactivos desarrollados con Excel y Power BI.
+                        </p>
+                        <ul>
+                            <li>Productividad y eficiencia</li>
+                            <li>Análisis por periodos y perfiles</li>
+                            <li>Enfoque en toma de decisiones</li>
+                        </ul>
+
+                        <div class="subproyectos">
+                            <a href="./PROYECTOS/Data Analysis/Proyecto de VTC.pdf" target="_blank">📊 Dashboard Gestión VTC</a>
+                            <a href="./PROYECTOS/Data Analysis/Pasos para liderar la gestión y el seguimiento de un Call-center.pdf" target="_blank">📞 Gestión de Contact Center</a>
+                        </div>
+                    </div>
+
+                    <div id="web" class="detalle">
+                        <h3>Portfolio Web Personal</h3>
+                        <p>HTML, CSS y JavaScript responsive.</p>
+                    </div>
+
+                    <div id="soporte" class="detalle">
+                        <h3>Soporte Técnico y Redes</h3>
+                        <p>Configuración básica de sistemas y redes.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="card contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li><strong>Móvil:</strong> +34 634 104 283</li>
+                <li><strong>Email:</strong> sergi.temezk@gmail.com</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sergio-tellez-9613a6367" target="_blank">Ver perfil</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <div class="data">
+        <div class="overlay"></div>
+        <img src="./IMAGENES/data analisys.png" alt="Data Analysis Background">
+    </div>
+
+    <footer>
+        <p>© 2025 · Proyecto educativo</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
